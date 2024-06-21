@@ -5,7 +5,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
 
-        GoToAllureFrame gtaf = new GoToAllureFrame();
+        CreateFrame cf = new CreateFrame();
 //        JLabel = a GUI display area for a string of text, an image or both
 //        Creates a label
         JLabel label = new JLabel();
@@ -14,7 +14,7 @@ public class Main {
         ImageIcon image = new ImageIcon("img.png");
         label.setIcon(image);
 //        add to frame
-        gtaf.add(label);
+        cf.add(label);
 
     }
 }

@@ -1,9 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class GoToAllureFrame extends JFrame{
+public class CreateFrame extends JFrame{
 
-    GoToAllureFrame(){
+    CreateFrame(){
         //set this title
         this.setTitle("Open Allure Report");
         //sets default close behaviour to exit
