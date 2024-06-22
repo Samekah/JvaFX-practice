@@ -11,7 +11,7 @@ public class Main {
         JLabel label = new JLabel();
 
         label.setText("Learning javafx is fun");                    //sets label text
-        ImageIcon image = new ImageIcon("img.png");         //creates an image
+        ImageIcon image = new ImageIcon("src/resources/images/img.png");         //creates an image
         label.setIcon(image);                                       //sets label image
 
 //        add to frame

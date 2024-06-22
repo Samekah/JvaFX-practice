@@ -16,7 +16,7 @@ public class CreateFrame extends JFrame{
     CreateFrame(){
 
         this.setTitle("Open Allure Report");
-        ImageIcon image = new ImageIcon("LR.png");
+        ImageIcon image = new ImageIcon("src/resources/images/LR.png");
         this.setIconImage(image.getImage());
         this.setSize(900,750);
         this.getContentPane().setBackground(new Color(0xCCCCFF));
