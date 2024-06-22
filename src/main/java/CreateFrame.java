@@ -9,18 +9,20 @@ import java.awt.*;
  * -> sets background colour
  * -> sets if the frame is resizeable
  * -> sets function of close operation
+ * -> sets layout manager
  * -> sets visibility
  */
 public class CreateFrame extends JFrame{
 
     CreateFrame(){
 
-        this.setTitle("Open Allure Report");
+        this.setTitle("JavaFX practice");
         ImageIcon image = new ImageIcon("src/resources/images/LR.png");
         this.setIconImage(image.getImage());
         this.setSize(900,750);
         this.getContentPane().setBackground(new Color(0xCCCCFF));
         this.setResizable(false);
+        this.setLayout(null);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
