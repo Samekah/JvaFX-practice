@@ -22,6 +22,5 @@ public class CreateFrame extends JFrame{
         this.getContentPane().setBackground(new Color(0xCCCCFF));
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setVisible(true);
     }
 }
