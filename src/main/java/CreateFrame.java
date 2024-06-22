@@ -1,22 +1,27 @@
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * This class creates and sets the style of a frame, as well as the function and config of its features
+ * -> sets Title
+ * -> sets Icon
+ * -> sets size
+ * -> sets background colour
+ * -> sets if the frame is resizeable
+ * -> sets function of close operation
+ * -> sets visibility
+ */
 public class CreateFrame extends JFrame{
 
     CreateFrame(){
-        //set this title
+
         this.setTitle("Open Allure Report");
-        //sets default close behaviour to exit
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //sets size
-        this.setSize(900,750);
-        //prevent this from being resized
-        this.setResizable(false);
-        //changes program logo
         ImageIcon image = new ImageIcon("LR.png");
         this.setIconImage(image.getImage());
-        // sets visibility
-        this.setVisible(true);
+        this.setSize(900,750);
         this.getContentPane().setBackground(new Color(0xCCCCFF));
+        this.setResizable(false);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);
     }
 }
