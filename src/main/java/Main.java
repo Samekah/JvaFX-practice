@@ -5,7 +5,7 @@ import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
-//        creates a frame and adds components to it
+//        creates a frame
         CreateFrame cf = new CreateFrame();
 
 //        JLabel = a GUI display area for a string of text, an image or both this creates a label
@@ -35,11 +35,22 @@ public class Main {
 //        we can also set how far away the text is from our image using +/- values
         label.setIconTextGap(50);
 
-//        add to frame and make visible
+        /**
+         * This section adds components to the frame - commenting out each line will show the different component, these are:
+         * [x] labels
+         * [] panels
+         * [] buttons
+         * [] border layout
+         * [] flow layout
+         * [] grid layout
+         * [] layered panes
+         * [] interactive compnents
+         * [] event listeners
+         * [] graphics
+         */
         cf.add(label);
         cf.setVisible(true);
-//        this line sets the size of the frame to accommodate for all components added to the frame, we turn off code that handles sizing to use this
-//        cf.pack();
+//        cf.pack();                  //this line sets the size of the frame to accommodate for all components added to the frame, we turn off code that handles sizing to use this
 
     }
 }
