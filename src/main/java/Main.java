@@ -35,10 +35,37 @@ public class Main {
 //        we can also set how far away the text is from our image using +/- values
         label.setIconTextGap(50);
 
+//        JPanel = a GUI component that functions as a container to hold other components
+
+        JPanel bluePanel = new JPanel();
+        JPanel redPanel = new JPanel();
+        JPanel greenPanel = new JPanel();
+        JPanel orangePanel = new JPanel();
+
+        bluePanel.setBackground(Color.blue);
+        bluePanel.setBounds(0,0,350,350);
+
+        redPanel.setBackground(Color.red);
+        redPanel.setBounds(350,0,350,350);
+
+        greenPanel.setBackground(Color.green);
+        greenPanel.setBounds(700,0,200,750);
+
+        orangePanel.setBackground(Color.orange);
+        orangePanel.setBounds(0,350,700,400);
+
+        JLabel panelLabel = new JLabel();
+        panelLabel.setText("Hi!");                                                                  //sets label text
+        ImageIcon panelImage = new ImageIcon("src/resources/images/fullHeart.png");         //creates an image
+        panelLabel.setIcon(panelImage);                                                            //sets label image
+
+        bluePanel.setLayout(new BorderLayout());
+        bluePanel.add(panelLabel);                                                          // adds component to panel
+        
         /**
          * This section adds components to the frame - commenting out each line will show the different component, these are:
          * [x] labels
-         * [] panels
+         * [x] panels
          * [] buttons
          * [] border layout
          * [] flow layout
@@ -48,7 +75,11 @@ public class Main {
          * [] event listeners
          * [] graphics
          */
-        cf.add(label);
+//        cf.add(label);
+        cf.add(bluePanel);
+        cf.add(redPanel);
+        cf.add(greenPanel);
+        cf.add(orangePanel);
         cf.setVisible(true);
 //        cf.pack();                  //this line sets the size of the frame to accommodate for all components added to the frame, we turn off code that handles sizing to use this
 
