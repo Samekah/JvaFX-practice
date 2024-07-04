@@ -55,12 +55,18 @@ public class Main {
         orangePanel.setBounds(0,350,700,400);
 
         JLabel panelLabel = new JLabel();
+        panelLabel.setBounds(300,0,75,75);
         panelLabel.setText("Hi!");                                                                  //sets label text
         ImageIcon panelImage = new ImageIcon("src/resources/images/fullHeart.png");         //creates an image
         panelLabel.setIcon(panelImage);                                                            //sets label image
 
-        bluePanel.setLayout(new BorderLayout());
-        bluePanel.add(panelLabel);                                                          // adds component to panel
+        //sets the position of the label depending on the layout manager used
+        panelLabel.setVerticalAlignment(JLabel.TOP);
+        panelLabel.setHorizontalAlignment(JLabel.CENTER);
+
+//        orangePanel.setLayout(new BorderLayout());                                             //sets border layout, if this is null we have to set the bounds of the label
+        orangePanel.setLayout(null);
+        orangePanel.add(panelLabel);                                                          // adds component to panel
         
         /**
          * This section adds components to the frame - commenting out each line will show the different component, these are:
