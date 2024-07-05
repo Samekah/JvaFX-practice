@@ -67,12 +67,15 @@ public class Main {
 //        orangePanel.setLayout(new BorderLayout());                                             //sets border layout, if this is null we have to set the bounds of the label
         orangePanel.setLayout(null);
         orangePanel.add(panelLabel);                                                          // adds component to panel
-        
+
+//        JButton = a button that performs an action when clicked
+        ButtonFrame bf = new ButtonFrame();
+
         /**
          * This section adds components to the frame - commenting out each line will show the different component, these are:
          * [x] labels
          * [x] panels
-         * [] buttons
+         * [x] buttons
          * [] border layout
          * [] flow layout
          * [] grid layout
@@ -86,8 +89,9 @@ public class Main {
         cf.add(redPanel);
         cf.add(greenPanel);
         cf.add(orangePanel);
-        cf.setVisible(true);
+
 //        cf.pack();                  //this line sets the size of the frame to accommodate for all components added to the frame, we turn off code that handles sizing to use this
+//        cf.setVisible(true);
 
     }
 }
