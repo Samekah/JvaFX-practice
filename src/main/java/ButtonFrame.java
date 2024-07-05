@@ -47,7 +47,7 @@ public class ButtonFrame extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		String labelText = "";
+		String labelText;
 		if(e.getSource()==button){
 			labelText = label.getText().equals("Howdy!!") ? "Hey!" : "Howdy!!";
 			label.setText(labelText);
