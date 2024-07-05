@@ -1,7 +1,6 @@
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
-import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
@@ -69,10 +68,9 @@ public class Main {
         orangePanel.add(panelLabel);                                                          // adds component to panel
 
 //        JButton = a button that performs an action when clicked
-        ButtonFrame bf = new ButtonFrame();
+        new ButtonFrame();
 
-        /**
-         * This section adds components to the frame - commenting out each line will show the different component, these are:
+        /**This section adds components to the frame - commenting out each line will show the different component, these are:
          * [x] labels
          * [x] panels
          * [x] buttons
