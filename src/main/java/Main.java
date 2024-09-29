@@ -74,7 +74,7 @@ public class Main {
          * [x] labels
          * [x] panels
          * [x] buttons
-         * [] border layout
+         * [x] border layout
          * [] flow layout
          * [] grid layout
          * [] layered panes
